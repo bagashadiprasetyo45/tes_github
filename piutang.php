@@ -1,0 +1,1 @@
+<?php $settlementType = 'receivable'; require __DIR__ . '/includes/settlement_page.php'; ?>

@@ -1,0 +1,49 @@
+{
+  "name": "KEUANGAN BAGAS",
+  "short_name": "Keuangan",
+  "description": "Kelola keuanganmu dengan lebih teratur - KEUANGAN BAGAS",
+  "start_url": "index.php",
+  "display": "standalone",
+  "background_color": "#f3f6fb",
+  "theme_color": "#5b62da",
+  "orientation": "portrait-primary",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "url": "dashboard.php",
+      "description": "Buka dashboard",
+      "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Tambah Pemasukan",
+      "url": "pemasukan.php",
+      "description": "Catat pemasukan"
+    },
+    {
+      "name": "Tambah Pengeluaran",
+      "url": "pengeluaran.php",
+      "description": "Catat pengeluaran"
+    }
+  ]
+}

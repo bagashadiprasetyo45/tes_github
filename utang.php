@@ -1,0 +1,1 @@
+<?php $settlementType = 'debt'; require __DIR__ . '/includes/settlement_page.php'; ?>

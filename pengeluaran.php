@@ -1,0 +1,1 @@
+<?php $transactionType = 'expense'; $pageTitle = 'Pengeluaran'; $activePage = 'pengeluaran.php'; require __DIR__ . '/includes/transaction_page.php'; ?>

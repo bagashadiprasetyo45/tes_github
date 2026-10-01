@@ -1,0 +1,9 @@
+{
+  "name": "bagas/keuangan-bagas",
+  "description": "KEUANGAN BAGAS - Personal finance PHP + MySQL + PWA",
+  "require": {
+    "php": "^8.1",
+    "ext-pdo": "*",
+    "ext-pdo_mysql": "*"
+  }
+}

@@ -1,0 +1,49 @@
+﻿<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KEUANGAN BAGAS - Mengalihkan...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#5b62da">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <meta http-equiv="refresh" content="1;url=login.php">
+  <style>.redirect-wrap{min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 10% 10%,#fff 0,#eff3ff 35%,#e8eef8 100%)}.spinner{width:32px;height:32px;border:3px solid #e2e6f0;border-top-color:#5b62da;border-radius:50%;animation:spin .8s linear infinite;margin:18px auto 0}@keyframes spin{to{transform:rotate(360deg)}}.hint{margin-top:18px;font-size:11px;color:#7b879e;line-height:1.6;max-width:420px;text-align:center}</style>
+</head>
+<body class="login-page" style="display:grid;place-items:center">
+<div class="login-orb orb-one"></div><div class="login-orb orb-two"></div>
+<section class="login-card" style="text-align:center">
+  <div class="login-brand"><div class="brand-mark"><i data-lucide="sparkles"></i></div><h1>KEUANGAN BAGAS</h1><p>Mengalihkan ke halaman login...</p></div>
+  <div class="spinner"></div>
+  <p class="hint">Jika tidak otomatis teralihkan, <a href="login.php" style="color:#5b62da;font-weight:700">klik di sini untuk masuk</a></p>
+  <div id="gh-hint" class="hint" style="display:none;background:rgba(216,94,117,.08);border:1px solid rgba(216,94,117,.15);padding:12px;border-radius:12px;text-align:left">
+    <b style="color:#d85e75">Kamu hosting di GitHub Pages?</b><br>
+    GitHub Pages <b>hanya support file statis (HTML/CSS/JS)</b> jadi <code>PHP</code> &amp; <code>MySQL</code> tidak akan jalan dan <code>login.php</code> akan terlihat sebagai file mentah / 404.<br><br>
+    Supaya tetap terhubung ke database, jangan pakai GitHub Pages. Pakai hosting PHP+MySQL gratis seperti <b>InfinityFree, FreeHosting, Railway, atau Hostinger</b>. Tetap push code ke GitHub, tapi deploy PHP-nya ke hosting tersebut.<br>
+    File <code>index.html</code> ini hanya agar GitHub tidak error, logic aslinya tetap di <code>index.php</code> &amp; <code>login.php</code>.
+  </div>
+</section>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){ if(window.lucide) lucide.createIcons(); });
+  // Deteksi GitHub Pages -> tampilkan peringatan
+  if (location.hostname.includes('github.io') || location.hostname.includes('githubusercontent')) {
+    document.getElementById('gh-hint').style.display = 'block';
+  }
+  // Redirect utama tetap ke login.php (agar tetap konek database di hosting PHP)
+  setTimeout(function(){
+    // kalau di github.io jangan paksa ke login.php (akan 404), biarkan user baca hint
+    if (location.hostname.includes('github.io')) return;
+    window.location.replace('login.php');
+  }, 800);
+</script>
+<noscript><p style="text-align:center;margin-top:12px"><a href="login.php">Lanjut ke login</a></p></noscript>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('service-worker.js').catch(()=>{}));}</script>
+</body>
+</html>
+
